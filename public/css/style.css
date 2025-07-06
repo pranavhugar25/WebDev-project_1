@@ -1,6 +1,20 @@
-/* body {
-    background-color: pink;
-} */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+ 
+/* .plus-jakarta-sans-<uniquifier> {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
 
 /* NAVBAR */
 .navbar {
@@ -49,4 +63,67 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-evenly ;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0% !important;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.listing-link {
+    text-decoration: none !important;
+}
+
+/* Card hover effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New page Form */
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white;
+}
+
+
+/* Show page */
+
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
 }
