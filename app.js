@@ -3,6 +3,11 @@
 // const { STATUS_CODES } = require("http");
 // const { listingSchema, reviewSchema } = require("./schema.js");
 // const Review = require("./models/review.js");
+if (process.env.NODE_ENV != "production") {
+  require("dotenv").config();
+}
+console.log(process.env.SECRET);
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
