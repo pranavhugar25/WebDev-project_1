@@ -109,7 +109,7 @@
               </h6>
               <p class="starability-result card-text" data-rating=<%= review.rating %>></p>
               <p class="card-text"><%= review.comment %></p>
-              <% if (review.author._id.toString() === currUser._id.toString()) { %>
+              <% if (currUser && review.author._id.toString() === currUser._id.toString()) { %>
               <form
                 action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE"
                 class="mb-3"
